@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.converter-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.amount-box, .currency-box, .result-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.currency-box {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.from-box, .to-box {
+    flex: 1;
+}
+
+label {
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+select {
+    padding: 12px;
+    padding-left: 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+    width: 100%;
+    appearance: none;
+    background: white;
+}
+
+select:focus {
+    border-color: #667eea;
+}
+
+select option {
+    padding: 10px;
+}
+
+.currency-flag {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 15px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2px;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #667eea;
+}
+
+.swap-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#swap-btn {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background 0.3s;
+}
+
+#swap-btn:hover {
+    background: #764ba2;
+}
+
+#convert-btn {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+#convert-btn:hover {
+    background: #764ba2;
+}
+
+#result {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+    min-height: 24px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+    
+    .currency-box {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .swap-btn {
+        transform: rotate(90deg);
+    }
+} 
