@@ -5,10 +5,11 @@ A simple and modern currency converter web application built with HTML, CSS, and
 ## Features
 
 - Real-time currency conversion
-- Support for 10 major currencies
+- Support for all available currencies
+- Country flags for each currency
 - Clean and responsive design
 - Swap currencies with one click
-- Automatic conversion on input change
+- Automatic conversion on button click
 
 ## Technologies Used
 
@@ -16,6 +17,7 @@ A simple and modern currency converter web application built with HTML, CSS, and
 - CSS3
 - JavaScript (ES6+)
 - Exchange Rate API (exchangerate-api.com)
+- Flag CDN for country flags
 
 ## How to Use
 
@@ -23,7 +25,7 @@ A simple and modern currency converter web application built with HTML, CSS, and
 2. Enter the amount you want to convert
 3. Select the source currency (From)
 4. Select the target currency (To)
-5. The conversion will happen automatically
+5. Click the "Convert" button to see the result
 6. Use the swap button (⇄) to quickly switch between currencies
 
 ## API Usage
@@ -42,4 +44,4 @@ The application works on all modern browsers that support:
 
 ## License
 
-This project is open source and available under the MIT License. 
+This project is open source and available under the MIT License.
